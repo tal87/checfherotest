@@ -11,3 +11,11 @@ header {
     width: 265px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  header {
+    img {
+      width: 100px;
+    }
+  }
+}
