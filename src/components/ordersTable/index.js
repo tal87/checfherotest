@@ -41,7 +41,9 @@ const OrdersTable = () => {
             <td>{renderDate(order.deliveryDay)}</td>
             <td>{renderVendorCol(order)}</td>
             <td>
-              {!isNaN(order.total) && order.total > 0 && `$${order.total}`}
+              {!isNaN(order.total) &&
+                order.total > 0 &&
+                `$${order.total.toFixed(2)}`}
             </td>
           </tr>
         );
