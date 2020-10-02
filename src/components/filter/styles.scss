@@ -32,8 +32,13 @@
 
 @media only screen and (max-width: 768px) {
   .filters {
+    label {
+      text-align: center;
+    }
     .filter-controls {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       .clear-filter-btn {
         margin-left: 0;
         width: 200px;

@@ -52,18 +52,20 @@ const OrdersTable = () => {
   };
 
   return (
-    <div className="table-container">
-      <table className="orders-table">
-        <thead>
-          <tr>
-            <th>Status</th>
-            <th>Delivery Day</th>
-            <th>Supplier</th>
-            <th>Total</th>
-          </tr>
-        </thead>
-        <tbody>{renderTableBody()}</tbody>
-      </table>
+    <div className="data-table">
+      <div className="table-container">
+        <table className="orders-table">
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Delivery Day</th>
+              <th>Supplier</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>{renderTableBody()}</tbody>
+        </table>
+      </div>
     </div>
   );
 };
