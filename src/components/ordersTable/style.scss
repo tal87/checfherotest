@@ -1,9 +1,10 @@
 .table-container {
   overflow: auto;
-  height: calc(95vh - 10px - 105px - 217px);
+  height: calc(95vh - 10px - 80px - 217px);
   .orders-table {
     padding: 0 100px;
     width: 100%;
+    // overflow: auto;
     thead {
       border: 0;
       tr {
@@ -25,6 +26,7 @@
       height: 50px;
       padding: 10px;
       color: rgb(92, 114, 119);
+      min-width: 284px;
     }
 
     .delivered {

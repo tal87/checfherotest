@@ -32,23 +32,25 @@ const Filter = () => {
   return (
     <div className="filters">
       <label>Supplier</label>
-      <select
-        onChange={(e) => {
-          setFilter(e.target.value);
-        }}
-        value={filter}
-      >
-        <option value="">All Suppliers</option>
-        {renderDropdown()}
-      </select>
-      <button
-        onClick={() => {
-          setFilter("");
-        }}
-        className="clear-filter-btn"
-      >
-        x Reset Filters
-      </button>
+      <div className="filter-controls">
+        <select
+          onChange={(e) => {
+            setFilter(e.target.value);
+          }}
+          value={filter}
+        >
+          <option value="">All Suppliers</option>
+          {renderDropdown()}
+        </select>
+        <button
+          onClick={() => {
+            setFilter("");
+          }}
+          className="clear-filter-btn"
+        >
+          x Reset Filters
+        </button>
+      </div>
     </div>
   );
 };

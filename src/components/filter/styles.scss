@@ -1,27 +1,44 @@
 .filters {
   background-color: rgb(245, 245, 245);
-  padding: 70px 100px;
+  padding: 50px 100px;
   label {
     display: block;
     margin-bottom: 20px;
     color: rgb(127, 133, 131);
   }
-  select {
-    width: 200px;
-    padding: 10px;
-    color: rgb(20, 40, 44);
+  .filter-controls {
+    display: flex;
+
+    select {
+      width: 200px;
+      padding: 10px;
+      color: rgb(20, 40, 44);
+    }
+    .clear-filter-btn {
+      padding: 10px;
+      margin-left: 50px;
+      background-color: rgb(20, 40, 44);
+      color: #fff;
+      outline: none;
+      cursor: pointer;
+      border: 0;
+      border-radius: 5px;
+      &:active {
+        box-shadow: inset 0 0 20px rgba(0, 0, 0, 1);
+      }
+    }
   }
-  .clear-filter-btn {
-    padding: 10px;
-    margin-left: 50px;
-    background-color: rgb(20, 40, 44);
-    color: #fff;
-    outline: none;
-    cursor: pointer;
-    border: 0;
-    border-radius: 5px;
-    &:active {
-      box-shadow: inset 0 0 20px rgba(0, 0, 0, 1);
+}
+
+@media only screen and (max-width: 768px) {
+  .filters {
+    .filter-controls {
+      flex-direction: column;
+      .clear-filter-btn {
+        margin-left: 0;
+        width: 200px;
+        margin-top: 20px;
+      }
     }
   }
 }

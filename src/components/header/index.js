@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.scss";
-// import Logo from "../../../public/chefhero_logo_white.png";
 
 const Header = () => {
   return (
