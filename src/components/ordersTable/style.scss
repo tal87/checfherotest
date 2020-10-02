@@ -1,7 +1,8 @@
 .data-table {
   padding: 0 100px;
+  padding-top: 292px;
   .table-container {
-    overflow: auto;
+    // overflow: auto;
     height: calc(100vh - 10px - 80px - 217px);
     .orders-table {
       width: 100%;
@@ -71,5 +72,9 @@
 @media only screen and (max-width: 768px) {
   .data-table {
     padding: 0;
+    padding-top: 228px;
+    // .table-container {
+    //   overflow: hidden;
+    // }
   }
 }

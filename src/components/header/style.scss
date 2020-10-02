@@ -1,21 +1,25 @@
-.top-bar {
-  background-color: rgb(29, 54, 59);
-  height: 10px;
-}
-header {
-  padding: 0 100px;
-  background-color: rgb(41, 73, 79);
-  text-align: center;
-  padding: 20px 0;
-  img {
-    width: 265px;
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  .top-bar {
+    background-color: rgb(29, 54, 59);
+    height: 10px;
   }
-}
-
-@media only screen and (max-width: 768px) {
   header {
+    padding: 0 100px;
+    background-color: rgb(41, 73, 79);
+    text-align: center;
+    padding: 20px 0;
     img {
-      width: 100px;
+      width: 265px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    header {
+      img {
+        width: 100px;
+      }
     }
   }
 }
