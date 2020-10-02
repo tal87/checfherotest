@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { filterByVendor } from "../../utils/actions";
 
-import "./styles.scss";
+import "./style.scss";
 
 const Filter = () => {
   const state = useSelector((state) => state);
