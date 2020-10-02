@@ -28,6 +28,7 @@ const OrdersTable = () => {
   };
 
   const renderTableBody = () => {
+    //get orders with the specific selected vendor
     return orders.orders
       .filter((order) => !orders.vendor || orders.vendor === order.vendorName)
       .map((order, i) => {

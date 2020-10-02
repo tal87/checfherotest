@@ -8,6 +8,7 @@ import "./style.scss";
 const Filter = () => {
   const state = useSelector((state) => state);
   const [filter, setFilter] = useState("");
+  // get the list of vendors
   const vendors = state.orders.orders.map((order) => order.vendorName);
   const dispatch = useDispatch();
 
@@ -16,6 +17,7 @@ const Filter = () => {
   }, [dispatch, filter]);
 
   const renderDropdown = () => {
+    // render list of unique vendors into dropdown
     let uniqueVendors = {};
     return vendors.map((vendor) => {
       if (!uniqueVendors.hasOwnProperty(vendor)) {
