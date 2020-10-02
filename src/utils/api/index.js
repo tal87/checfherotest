@@ -1,3 +1,5 @@
-// import axios from "axios";
+import axios from "axios";
 
-// const instance = axios.create('https://chefhero.free.beeceptor.com')
+export default axios.create({
+  baseURL: "https://chefhero.free.beeceptor.com",
+});

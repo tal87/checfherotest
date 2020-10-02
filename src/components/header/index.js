@@ -6,7 +6,7 @@ const Header = () => {
     <>
       <div className="top-bar"></div>
       <header>
-        <img src="./chefhero_logo_white.png" />
+        <img src="./chefhero_logo_white.png" alt="chefhero logo" />
       </header>
     </>
   );

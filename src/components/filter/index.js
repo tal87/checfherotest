@@ -13,7 +13,7 @@ const Filter = () => {
 
   useEffect(() => {
     dispatch(filterByVendor(filter));
-  }, [filter]);
+  }, [dispatch, filter]);
 
   const renderDropdown = () => {
     let uniqueVendors = {};
@@ -25,6 +25,8 @@ const Filter = () => {
             {vendor}
           </option>
         );
+      } else {
+        return "";
       }
     });
   };

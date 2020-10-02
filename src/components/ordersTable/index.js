@@ -7,9 +7,6 @@ import "./style.scss";
 const OrdersTable = () => {
   const state = useSelector((state) => state);
   const { orders } = state;
-
-  // const dispatch = useDispatch();
-
   const renderDate = (date) => {
     const year = date.substr(0, 4);
     const month = date.substr(5, 2);
