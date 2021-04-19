@@ -4,6 +4,7 @@ import { ORDER_TYPES } from "../types";
 const INIT_STATE = {
   orders: [],
   vendor: "",
+  ts: 0,
 };
 
 const ordersReducer = (state = INIT_STATE, { type, payload }) => {
@@ -14,6 +15,18 @@ const ordersReducer = (state = INIT_STATE, { type, payload }) => {
     case ORDER_TYPES.VENDOR_FILTER:
       state = { ...state, vendor: payload };
       break;
+    case ORDER_TYPES.SEARCH:
+      console.log(payload);
+      if (state.ts > Number(payload.ts)) {
+        return state;
+      }
+
+      if (!payload.data) {
+        //payload.data = [];
+        return state;
+      }
+
+      state = { ...state, ts: payload.ts, orders: payload.data };
     default:
       break;
   }

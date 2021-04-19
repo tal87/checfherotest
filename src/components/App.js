@@ -7,10 +7,10 @@ import OrdersTable from "./ordersTable";
 import Header from "./header";
 
 const App = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getOrdersData());
-  }, [dispatch]);
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(getOrdersData());
+  // }, [dispatch]);
 
   return (
     <div>

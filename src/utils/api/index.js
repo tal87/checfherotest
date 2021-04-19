@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://chefhero.free.beeceptor.com",
+  baseURL: "http://buyer-api.interview.staging.foodieorders.com/api/v1",
 });
